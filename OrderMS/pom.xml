@@ -15,9 +15,10 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
-		<spring-cloud.version>2020.0.4</spring-cloud.version>
- <sonar.organization>reddykish</sonar.organization>
-  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<sonar.projectKey>afreen-shaikk_orderMS</sonar.projectKey>
+		<sonar.organization>afreen-shaikk</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io/</sonar.host.url>
+		<sonar.login>9fdc72d0e856a2f37836c0a0252158c903cce9e6</sonar.login>
 	</properties>
 	<dependencies>
 	<dependency>
@@ -79,12 +80,15 @@
 	</dependencyManagement>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
+		<pluginManagement>
+    		<plugins>
+      		<plugin>
+       		 <groupId>org.codehaus.sonar</groupId>
+       		 <artifactId>sonar-maven-plugin</artifactId>
+      		  <version>2.5.6</version>
+     		 </plugin>
+   		 </plugins>
+	</pluginManagement>
 	</build>
 
 </project>
